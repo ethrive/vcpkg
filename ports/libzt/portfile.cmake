@@ -1,17 +1,17 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO zerotier/libzt
-    REF 41eb9aebc80a5f1c816fa26a06cefde9de906676
-    SHA512 97454ef1177a71bb5b15794a71b7dd22a0edb03f4210fe3777beee4cb1476e64a0c99b9593aee8600a82b6b833f1096ce54992e9da148b9ad14c2bc54d6c055c
-    HEAD_REF master
+    REPO ethrive/libzt
+    REF fe6454cbf8ac5c012385c2634d181aed434589b7
+    SHA512 789369e850aa724cacdae8fe9ac3be2f649334cf85e7e430fcbe89f84b81d36bf57b6fd9204872d2628aece4a26ddec78b460b1d402a4d961b87875c10d64926
+    HEAD_REF ethrive
 )
 
 vcpkg_from_github(
         OUT_SOURCE_PATH ZEROTIERONE_SOURCE_PATH
-        REPO zerotier/ZeroTierOne
-        REF eac56a2e25bbd27f77505cbd0c21b86abdfbd36b
-        SHA512 354d35476d9cfc3d35c8b857d7314c4f2a2842cb2f5e6969de49cb127dc9d9825c2da95930cd2dc5ffc054d08369ee3bcfe9ea570c2c9e3ad1a328722847657f
-        HEAD_REF master
+        REPO ethrive/ZeroTierOne
+        REF a14ed3858b5170081a77017c727e1bcc7c28c8a5
+        SHA512 9486fe2bb0dd83867d641e2467b6ebf263579c93edf31f84a3b4977840d94648de591f384a18c57309d392a734fab92f8715fa0083dae9c5f5bb2c8fc11a06d4
+        HEAD_REF ethrive
 )
 
 vcpkg_from_github(
