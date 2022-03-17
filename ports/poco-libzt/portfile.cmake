@@ -59,7 +59,7 @@ vcpkg_cmake_configure(
         -DENABLE_SEVENZIP=OFF
         -DENABLE_TESTS=OFF
         -DENABLE_UTIL=ON
-        -DENABLE_XML=OFF
+        -DENABLE_XML=ON
         -DENABLE_ZIP=OFF
 )
 
