@@ -6,6 +6,7 @@
   "homepage": "https://github.com/pocoproject/poco",
   "supports": "!uwp",
   "dependencies": [
+    "libzt",
     "expat",
     {
       "name": "vcpkg-cmake",

@@ -1,13 +1,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO aarlt/poco-libzt
-    REF ac9512a11fca8623f8cef0a4c1cc977ef7315caa
-    SHA512 0092d95893580b8380a39b883c6b9d156a6a059c43f2dd7a8fa744d6612f4e41e96e5ec7bdcd81105c587fd43040e06b86235314b36835bed0b32dec0e30bf24
+    REPO ethrive/poco-libzt
+    REF 0701ca07d9c9a3db976fa69eddc0130977d28fed
+    SHA512 376d2b2838d3be7afc5f876ae2b5cd2713087231f5b28754252260b7fff025f591e9df5901722a6404d177a8ada6f059db5cc3f32465d22840fff2f4bf544b4f
 )
 
 # define Poco linkage type
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" POCO_STATIC)
-string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" POCO_MT)
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
@@ -32,7 +31,6 @@ vcpkg_cmake_configure(
         -DPOCO_UNBUNDLED=OFF
         # Define linking feature
         -DPOCO_STATIC=${POCO_STATIC}
-        -DPOCO_MT=${POCO_MT}
         -DENABLE_ACTIVERECORD=OFF
         -DENABLE_ACTIVERECORD_COMPILER=OFF
         -DENABLE_APACHECONNECTOR=OFF
@@ -48,7 +46,7 @@ vcpkg_cmake_configure(
         -DENABLE_FOUNDATION=ON
         -DENABLE_JSON=OFF
         -DENABLE_JWT=OFF
-        -DENABLE_LIBZT=OFF
+        -DENABLE_LIBZT=ON
         -DENABLE_MONGODB=OFF
         -DENABLE_NET=ON
         -DENABLE_NETSSL=OFF
