@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO ethrive/libzt
-    REF fe6454cbf8ac5c012385c2634d181aed434589b7
-    SHA512 789369e850aa724cacdae8fe9ac3be2f649334cf85e7e430fcbe89f84b81d36bf57b6fd9204872d2628aece4a26ddec78b460b1d402a4d961b87875c10d64926
+    REF 1dbef4f5d8ba5a31432b7d036fc2166b13fb7a0a
+    SHA512 10f212d1c0b0a1934b89dcacefdca58f5cafe8f2cc3b4f5a9c64dd17bbb0cc89c3684b7b897fcaae5c6f76cbb367266797ba9ba74cc9ce6e73987fdb7cd775b3
     HEAD_REF ethrive
 )
 
